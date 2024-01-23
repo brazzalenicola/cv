@@ -17,8 +17,8 @@ export const RESUME_DATA = {
     "Deep Learning Engineer - I multiply large matrices on GPUs for a living",
   summary:
     "",
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  avatarUrl: "https://github.com/brazzalenicola.png",
+  personalWebsiteUrl: "",
   contact: {
     email: "brazzalenicola@gmail.com",
     social: [
@@ -57,6 +57,7 @@ export const RESUME_DATA = {
     {
       company: "Thirona",
       link: "https://thirona.eu",
+      badges: [],
       title: "Deep Learning Engineer",
       logo: ThironaIcon,
       start: "April 2023",
