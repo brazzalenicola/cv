@@ -44,7 +44,7 @@ export const RESUME_DATA = {
     {
       school: "Aalto University",
       degree: "MSc in Machine Learning, Data Science and Artificial Intelligence",
-      description: "Major's courses: Machine Learning: Advanced Probabilistic Methods, Bayesian Data Analysis, Gaussian Processes, Deep Learning, Kernel Methods, Computer Vision, and Data Mining,  AI in health technologies and Medical Image Analysis.",
+      description: "Major's courses: Machine Learning: Advanced Probabilistic Methods, Bayesian Data Analysis, Gaussian Processes, Deep Learning, Kernel Methods, Computer Vision, and Data Mining,  AI in health technologies and Medical Image Analysis. Bioinformatic minor's courses: Computational Genomics, Machine Learning for bioinformatics, AI in health technologies, and Medical Image Analysis. Elective courses: Linear optimisation and non-linear optimisation",
       start: "2020",
       end: "2022",
     },
@@ -83,10 +83,12 @@ export const RESUME_DATA = {
     "Python",
     "PyTorch",
     "Tensorflow",
-    "C++",
     "OpenCV",
     "Keras",
   ],
+
+  skills_good_knowledge: ["Matlab", "R", "C++", "GIT", "Docker"],
+  skills_basic_knowledge: ["Julia", "Java", "SQL", "Jenkins"],
   projects: [
     {
       title: "Multi-modal Chest X-Ray analysis using self-supervised learning",
