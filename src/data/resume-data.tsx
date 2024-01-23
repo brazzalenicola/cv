@@ -14,7 +14,7 @@ export const RESUME_DATA = {
   location: "Arnhem, the Netherlands",
   locationLink: "https://www.google.com/maps/place/Arnhem",
   about:
-    "Deep Learning Engineer - I multiply large matrices on GPUs for a living",
+    "I multiply large matrices on GPUs for a living",
   summary:
     "",
   avatarUrl: "https://github.com/brazzalenicola.png",
@@ -56,15 +56,15 @@ export const RESUME_DATA = {
   ],
   work: [
     {
-      company: "Parabol",
-      link: "https://parabol.co",
+      company: "Thirona",
+      link: "https://thirona.eu",
       badges: ["Remote"],
-      title: "Senior Full Stack Developer",
+      title: "Deep Learning Engineer",
       logo: ThironaIcon,
-      start: "2021",
+      start: "2023",
       end: "2024",
       description:
-        "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
+        "",
     },
     {
       company: "Aalto University - Machine Learnign for Health (ML4H) research group",
@@ -87,53 +87,32 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
-      title: "Consultly",
+      title: "Multi-modal Chest X-Ray analysis using self-supervised learning",
       techStack: [
-        "Side Project",
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
+        "Master Thesis",
+        "Python",
+        "Shell scripting",
+        "High-performance Cluster",
+        "Pytorch",
+        "Lightning AI",
+        "Weights&Biases"
       ],
-      description: "A platform to build and grow your online business",
+      description: "We improved the classification performance by conducting self-supervised pre-training using BarlowTwins on unlabeled datasets. This set the stage for employing a pre-trained CNN in the final classification, leading to enhanced performance. GPT was then utilized to generate reports based on the visual features of X-rays.",
       logo: ConsultlyLogo,
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
+        label: "github.com",
+        href: "https://github.com/brazzalenicola/chestXray-ssl",
       },
     },
     {
-      title: "Monito",
-      techStack: ["Side Project", "TypeScript", "Next.js", "Browser Extension"],
+      title: "Abnormal ECG classification",
+      techStack: ["Side Project", "Python", "Pytorch"],
       description:
-        "Browser extension that records everything happening in a web application",
+        "A project involving RNNs and Generative Adversarial Networks (GANs) for classifying abnormal heart rhythms and generating synthetic data.",
       logo: MonitoLogo,
       link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
-    },
-    {
-      title: "Jarocki.me",
-      techStack: ["Side Project", "Next.js", "MDX"],
-      description:
-        "My personal website and blog. Built with Next.js and Notion API",
-      logo: JarockiMeLogo,
-      link: {
         label: "github.com",
-        href: "https://jarocki.me/",
-      },
-    },
-    {
-      title: "Minimal",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Minimalist calendars, habit trackers and planners generator",
-      logo: Minimal,
-      link: {
-        label: "useminimal.com",
-        href: "https://useminimal.com/",
+        href: "https://github.com/brazzalenicola/Atrial-Fibrillation",
       },
     },
   ],
