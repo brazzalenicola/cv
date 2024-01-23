@@ -92,10 +92,9 @@ export const RESUME_DATA = {
       title: "Multi-modal Chest X-Ray analysis using self-supervised learning",
       techStack: [
         "Master Thesis",
-        "Python",
         "Shell scripting",
         "High-performance Cluster",
-        "Pytorch",
+        "PyTorch",
         "Lightning AI",
         "Weights&Biases"
       ],
@@ -108,7 +107,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Abnormal ECG classification",
-      techStack: ["Side Project", "Python", "Pytorch", "GANs", "RNNs"],
+      techStack: ["Side Project", "Pytorch", "GANs", "RNNs"],
       description:
         "A project involving Recurrent and Generative Adversarial Networks for classifying abnormal heart rhythms and generating synthetic data.",
       logo: MonitoLogo,
@@ -119,12 +118,22 @@ export const RESUME_DATA = {
     },
     {
       title: "Long-term Epileptic EEG classification",
-      techStack: ["Matlab", "Wavelet-transform", "CNNs"],
+      techStack: ["Bachelor Thesis", "Matlab", "Wavelet-transform", "CNNs"],
       description: "Classification of epileptic EEG records using a 2D mapping of the signal and CNNs",
       logo: MonitoLogo,
       link: {
         label: "github.com",
         href: "https://github.com/brazzalenicola/Atrial-Fibrillation",
+      },
+    },
+    {
+      title: "Lymphoma Subtype Classification",
+      techStack: ["Side Project", "CNNs", "RNNs", "Tensorflow"],
+      description: "Personal project on the classification of non-Hodgkin's lymphoma subtypes using different colour spaces, CNNs, RNNs and hybrid Recurrent-Convolutional neural networks",
+      logo: MonitoLogo,
+      link: {
+        label: "github.com",
+        href: "https://github.com/brazzalenicola/LymphomaSubtypeClassifier",
       },
     },
   ],
