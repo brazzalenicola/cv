@@ -21,6 +21,7 @@ export const RESUME_DATA = {
   personalWebsiteUrl: "",
   contact: {
     email: "brazzalenicola@gmail.com",
+    tel: "",
     social: [
       {
         name: "GitHub",
