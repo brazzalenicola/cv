@@ -43,7 +43,7 @@ export const RESUME_DATA = {
   education: [
     {
       school: "Aalto University",
-      degree: "MSc Machine Learning, Data Science and Artificial Inteeligence",
+      degree: "MSc Machine Learning, Data Science and Artificial Intelligence",
       start: "2020",
       end: "2022",
     },
@@ -56,13 +56,13 @@ export const RESUME_DATA = {
   ],
   work: [
     {
-      company: "Thirona",
-      link: "https://thirona.eu",
-      badges: [],
-      title: "Deep Learning Engineer",
+      company: "Parabol",
+      link: "https://parabol.co",
+      badges: ["Remote"],
+      title: "Senior Full Stack Developer",
       logo: ThironaIcon,
-      start: "April 2023",
-      end: "April 2024",
+      start: "2021",
+      end: "2024",
       description:
         "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
     },
