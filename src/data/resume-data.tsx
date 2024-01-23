@@ -64,6 +64,7 @@ export const RESUME_DATA = {
       title: "Deep Learning Engineer",
       logo: ThironaIcon,
       start: "2023",
+      end: "Present",
       description:
         "",
     },
