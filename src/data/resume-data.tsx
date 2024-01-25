@@ -62,7 +62,7 @@ export const RESUME_DATA = {
       logo: ThironaIcon,
       start: "2023",
       end: "Present",
-      general_description: "As a deep learning engineer, I focused on cutting-edge research and development of segmentation modules on chestCT scans. My work revolves around two significant projects:",
+      general_description: "As a deep learning engineer, I focused on cutting-edge research and development of segmentation modules for chest ct scans. My work revolves around two significant projects:",
       description:[
         "AVX - Artery Vein Segmentation Module: Contributed in the research and development of the AVX module for pulmonary hypertension research. Executed experiments to validate concepts and measure progress. Subsequently, refined biomarkers, measurements characterizing the segmented vessels, enhancing their precision and contributing to the overall advancement of the module.",
         "Fissure Segmentation and Classification: Contributed to improving the efficiency and inference time of the fissure segmentation module. This module identifies and classifies lobe fissures as complete or gapped. Implemented enhancements for quicker and more precise analysis, crucial for assessing collateral ventilation in patients."
