@@ -14,7 +14,7 @@ export const RESUME_DATA = {
   role: "Deep Learning Engineer",
   about: "I multiply large matrices on GPUs for a living",
   summary:
-    "Ambitious individual with a strong inclination towards interdisciplinary and mission-oriented companies, with a particular focus on medical AI. I believe in my objectives and that any task can be achieved through dedication and a strong work ethic. I value teamwork and being able to communicate directly and sincerely as my strengths. I have experience working in regulated environments and am proficient at handling medical images (e.g., DICOMs)."
+    "Ambitious individual with a strong inclination towards interdisciplinary and mission-oriented companies, with a particular focus on medical AI. I believe in my objectives and that any task can be achieved through dedication and a strong work ethic. I value teamwork and being able to communicate directly and sincerely as my strengths. I have experience working in regulated environments and am proficient at handling medical images (e.g., DICOMs).",
   avatarUrl: "https://github.com/brazzalenicola.png",
   personalWebsiteUrl: "",
   contact: {
