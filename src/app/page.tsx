@@ -124,7 +124,7 @@ export default function Page() {
                   </h4>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
-                  {"As a deep learning engineer, I focused on cutting-edge research and development of segmentation modules on chestCT scans. My work revolves around two significant projects:"}
+                  {work.general_description}
                 </CardContent>
                 <CardContent className="mt-2 text-xs">
                   {typeof work.description === "string" ? (
