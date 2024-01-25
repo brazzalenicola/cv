@@ -124,7 +124,7 @@ export default function Page() {
                   </h4>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
-                  {work.general_description}
+                  {"As a deep learning engineer, I focused on cutting-edge research and development of segmentation modules on chestCT scans. My work revolves around two significant projects:"}
                 </CardContent>
                 <CardContent className="mt-2 text-xs">
                   {typeof work.description === "string" ? (
@@ -134,7 +134,7 @@ export default function Page() {
                       return (
                         <p key={desc} className="mb-1">
                           <span className="mr-2">
-                            {work?.customBullet || "•"}
+                            {"•"}
                           </span>
                           {desc}
                         </p>
