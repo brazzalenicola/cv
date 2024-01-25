@@ -2,8 +2,6 @@ import {
   ClevertechLogo,
   ConsultlyLogo,
   ThironaIcon,
-  JarockiMeLogo,
-  Minimal,
   MonitoLogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
@@ -60,23 +58,25 @@ export const RESUME_DATA = {
     {
       company: "Thirona",
       link: "https://thirona.eu",
-      badges: ["Remote"],
       title: "Deep Learning Engineer",
       logo: ThironaIcon,
       start: "2023",
       end: "Present",
-      description:
-        "",
+      general_description: "As a deep learning engineer, I focused on cutting-edge research and development of segmentation modules on chestCT scans. My work revolves around two significant projects:",
+      description:[
+        "AVX - Artery Vein Segmentation Module: Contributed in the research and development of the AVX module for pulmonary hypertension research. Executed experiments to validate concepts and measure progress. Subsequently, refined biomarkers, measurements characterizing the segmented vessels, enhancing their precision and contributing to the overall advancement of the module.",
+        "Fissure Segmentation and Classification: Contributed to improving the efficiency and inference time of the fissure segmentation module. This module identifies and classifies lobe fissures as complete or gapped. Implemented enhancements for quicker and more precise analysis, crucial for assessing collateral ventilation in patients."
+      ]
     },
     {
-      company: "Aalto University - Machine Learnign for Health (ML4H) research group",
-      link: "https://clevertech.biz",
+      company: "Aalto University - Machine Learning for Health (ML4H) research group",
+      link: "https://users.ics.aalto.fi/~pemartti/",
       title: "Research Assistant",
       logo: ClevertechLogo,
       start: "2021",
       end: "2022",
       description:
-        "I conducted research on the comparison of Vision Transformers with traditional CNNs for X-Rays classification. I evaluated various datasets and techniques to improve training efficiency and analyzed the impact of data augmentation on final performance.",
+        "I conducted research on the comparison of Vision Transformers with traditional CNNs for Chest X-Rays classification. I evaluated various datasets and techniques to improve training efficiency and analyzed the impact of data augmentation on final performance.",
     },
   ],
   skills: [
@@ -91,6 +91,26 @@ export const RESUME_DATA = {
   skills_basic_knowledge: ["Julia", "Java", "SQL", "Jenkins"],
   projects: [
     {
+      title: "Artery-Vein Phenotyping - AVX",
+      techStack: ["UNets","CNNs", "Tensorflow", "Docker"],
+      description: "I contributed to the artery-vein segmentation module by researching practical improvements. I explored new loss functions to accurately segment anatomical structures and ensure connected predictions, and I experimented with different normalization techniques better suited to our requirements. In addition, I refined the calculation of biomarkers to ensure to provide clients with highly precise and informative measurements regarding vessels.",
+      logo: ThironaIcon,
+      link: {
+        label: "thirona",
+        href: "https://thirona.eu/avx/",
+      },
+    },
+    {
+      title: "Fissure Segmentation and Classification",
+      techStack: ["UNets","CNNs", "Tensorflow", "Docker", "Evidential Deep Learning"],
+      description: "Improved efficiency and reduced inference time of the fissure segmentation module. This module identifies and categorizes lobe fissures as complete or gapped. Implemented enhancements for faster and more precise analysis, critical for evaluating collateral ventilation in patients. Additionally, introduced evidential deep learning to estimate confidence and uncertainty in model predictions.",
+      logo: ThironaIcon,
+      link: {
+        label: "thirona",
+        href: "https://thirona.eu/",
+      },
+    },
+    {
       title: "Multi-modal Chest X-Ray analysis using self-supervised learning",
       techStack: [
         "Master Thesis",
@@ -100,7 +120,7 @@ export const RESUME_DATA = {
         "Lightning AI",
         "Weights&Biases"
       ],
-      description: "We improved the downstream classification performance by conducting self-supervised pre-training using BarlowTwins on unlabeled X-Rays datasets. GPT was then utilized to generate reports based on the visual features of X-rays.",
+      description: "I improved the downstream classification performance by performing self-supervised pre-training using BarlowTwins on unlabeled X-Rays datasets. GPT was then utilized to generate reports based on the visual features of X-rays.",
       logo: ConsultlyLogo,
       link: {
         label: "github.com",
@@ -119,16 +139,6 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Long-term Epileptic EEG classification",
-      techStack: ["Bachelor Thesis", "Matlab", "Wavelet-transform", "CNNs"],
-      description: "Classification of epileptic EEG records using a 2D mapping of the signal and CNNs",
-      logo: MonitoLogo,
-      link: {
-        label: "github.com",
-        href: "https://github.com/brazzalenicola/Atrial-Fibrillation",
-      },
-    },
-    {
       title: "Lymphoma Subtype Classification",
       techStack: ["Side Project", "CNNs", "RNNs", "Tensorflow"],
       description: "Personal project on the classification of non-Hodgkin's lymphoma subtypes using different colour spaces, CNNs, RNNs and hybrid Recurrent-Convolutional neural networks",
@@ -138,5 +148,16 @@ export const RESUME_DATA = {
         href: "https://github.com/brazzalenicola/LymphomaSubtypeClassifier",
       },
     },
+    {
+      title: "Long-term Epileptic EEG classification",
+      techStack: ["Bachelor Thesis", "Matlab", "Wavelet-transform", "CNNs"],
+      description: "Classification of epileptic EEG records using a 2D mapping of the signal and CNNs",
+      logo: MonitoLogo,
+      link: {
+        label: "github.com",
+        href: "https://github.com/brazzalenicola/Atrial-Fibrillation",
+      },
+    },
+
   ],
 } as const;

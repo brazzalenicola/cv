@@ -1,3 +1,4 @@
+import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -123,7 +124,24 @@ export default function Page() {
                   </h4>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
-                  {work.description}
+                  {work.general_description}
+                </CardContent>
+                <CardContent className="mt-2 text-xs">
+                  {typeof work.description === "string" ? (
+                    <p>{work.description}</p>
+                  ) : (
+                    work.description?.map((desc) => {
+                      return (
+                        <p key={desc} className="mb-1">
+                          <span className="mr-2">
+                            {work?.customBullet || "•"}
+                          </span>
+                          {desc}
+                        </p>
+                      );
+                    })
+                  )}
+                  
                 </CardContent>
               </Card>
             );
