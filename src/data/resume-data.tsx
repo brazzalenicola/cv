@@ -14,7 +14,7 @@ export const RESUME_DATA = {
   role: "Deep Learning Engineer",
   about: "I multiply large matrices on GPUs for a living",
   summary:
-    "I am an ambitious person with a great interest in interdisciplinary and mission-oriented companies. I believe in my objectives and that any task can be achieved through dedication and a strong work ethic. I value teamwork and being able to communicate directly and sincerely as my strengths.",
+    "Ambitious individual with a strong inclination towards interdisciplinary and mission-oriented companies, with a particular focus on medical AI. I believe in my objectives and that any task can be achieved through dedication and a strong work ethic. I value teamwork and being able to communicate directly and sincerely as my strengths. I have experience working in regulated environments and am proficient at handling medical images (e.g., DICOMs)."
   avatarUrl: "https://github.com/brazzalenicola.png",
   personalWebsiteUrl: "",
   contact: {
@@ -64,7 +64,7 @@ export const RESUME_DATA = {
       end: "Present",
       general_description: "As a deep learning engineer, I focused on cutting-edge research and development of segmentation modules for chest ct scans. My work revolves around two significant projects:",
       description:[
-        "AVX - Artery Vein Segmentation Module: Contributed in the research and development of the AVX module for pulmonary hypertension research. Executed experiments to validate concepts and measure progress. Subsequently, refined biomarkers, measurements characterizing the segmented vessels, enhancing their precision and contributing to the overall advancement of the module.",
+        "AVX - Artery Vein Segmentation Module: Contributed in the research and development of the AVX module for pulmonary hypertension research. I designed and implemented pipelines, and executed experiments to validate concepts and measure progress. Subsequently, refined biomarkers, measurements characterizing the segmented vessels, enhancing their precision and contributing to the overall advancement of the module.",
         "Fissure Segmentation and Classification: Contributed to improving the efficiency and inference time of the fissure segmentation module. This module identifies and classifies lobe fissures as complete or gapped. Implemented enhancements for quicker and more precise analysis, crucial for assessing collateral ventilation in patients."
       ]
     },
@@ -88,13 +88,13 @@ export const RESUME_DATA = {
     "Keras",
   ],
 
-  skills_good_knowledge: ["Matlab", "R", "C++", "GIT", "Docker"],
+  skills_good_knowledge: ["Matlab", "R", "C++", "GIT", "Docker", "ITK"],
   skills_basic_knowledge: ["Julia", "Java", "SQL", "Jenkins"],
   projects: [
     {
       title: "Artery-Vein Phenotyping - AVX",
       techStack: ["UNets","CNNs", "Tensorflow", "Docker"],
-      description: "I contributed to the artery-vein segmentation module by researching practical improvements. I explored new loss functions to accurately segment anatomical structures and ensure connected predictions, and I experimented with different normalization techniques better suited to our requirements. In addition, I refined the calculation of biomarkers to ensure to provide clients with highly precise and informative measurements regarding vessels.",
+      description: "I contributed to the artery-vein segmentation module by researching practical improvements. I designed and implemented parts of the pipeline, such as the training, inference and evaluation pipeline, and through literature research explored different normalization techniques, new metrics, and new loss functions to accurately segment anatomical structures, thereby obtaining predictions that conformed to our requirements. In addition, I refined the calculation of biomarkers to ensure to provide clients with highly precise and informative measurements regarding vessels.",
       logo: ThironaIcon,
       link: {
         label: "thirona",
