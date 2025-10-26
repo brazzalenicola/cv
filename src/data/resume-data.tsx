@@ -62,11 +62,11 @@ export const RESUME_DATA = {
       logo: ThironaIcon,
       start: "2023",
       end: "Present",
-      general_description: "As a deep learning engineer, I focused on cutting-edge research and development of segmentation modules for chest ct scans. My work revolves around two significant projects:",
-      description:[
-        "AVX - Artery Vein Segmentation Module: Contributed in the research and development of the AVX module for pulmonary hypertension research. I designed and implemented pipelines, and executed experiments to validate concepts and measure progress. Subsequently, refined biomarkers, measurements characterizing the segmented vessels, enhancing their precision and contributing to the overall advancement of the module.",
-        "Fissure Segmentation and Classification: Contributed to improving the efficiency and inference time of the fissure segmentation module. This module identifies and classifies lobe fissures as complete or gapped. Implemented enhancements for quicker and more precise analysis, crucial for assessing collateral ventilation in patients."
-      ]
+    general_description: "As a Deep Learning Engineer, I focused on the research and development of advanced segmentation modules for chest CT scans, contributing to both model innovation and clinical applicability. My work centered around these key projects:",
+    description: [
+      "AVX - Artery Vein Phenotyping: Contributed to the research and development of AVX for pulmonary hypertension studies. Designed and implemented end-to-end data and training pipelines, conducted experiments to validate architectural choices, and refined vessel-based biomarkers to improve quantitative precision and clinical relevance.",
+      "Fissure Segmentation: Optimized the fissure segmentation module for faster and more accurate inference. The model detects and classifies pulmonary fissures as complete or gapped, supporting the assessment of collateral ventilation. Implemented architectural and preprocessing enhancements to reduce latency and improve robustness in clinical deployment."
+    ]
     },
     {
       company: "Aalto University - Machine Learning for Health (ML4H) research group",
@@ -76,8 +76,10 @@ export const RESUME_DATA = {
       start: "2021",
       end: "2022",
       general_description:"",
-      description:
-        "I conducted research on the comparison of Vision Transformers with traditional CNNs for Chest X-Rays classification. I evaluated various datasets and techniques to improve training efficiency and analyzed the impact of data augmentation on final performance.",
+      description:[
+        "Conducted research on the comparison of ViTs and traditional CNNs for Chest X-Ray classification. Pretrained [miniGPT](https://github.com/karpathy/minGPT) on a large corpus of radiology reports and fine-tuned it with visual features extracted from X-Rays to build a lightweight vision-language model.",
+        "Evaluated multiple datasets and data augmentation strategies to analyze their effect on model efficiency and diagnostic performance."
+      ]
     },
   ],
   skills: [
@@ -86,10 +88,12 @@ export const RESUME_DATA = {
     "Tensorflow",
     "OpenCV",
     "Keras",
+    "GIT",
+    "Docker",
   ],
 
-  skills_good_knowledge: ["Matlab", "R", "C++", "GIT", "Docker", "ITK"],
-  skills_basic_knowledge: ["Julia", "Java", "SQL", "Jenkins"],
+  skills_good_knowledge: ["ITK", "Jenkins", "SQL"],
+  skills_basic_knowledge: ["Julia", "Java", "C++", "R", "Matlab"],
   projects: [
     {
       title: "Artery-Vein Phenotyping - AVX",
@@ -103,7 +107,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Fissure Segmentation and Classification",
-      techStack: ["UNets","CNNs", "Tensorflow", "Docker", "Evidential Deep Learning"],
+      techStack: ["UNets","CNNs", "Tensorflow", "Docker", "EDL - Evidential Deep Learning"],
       description: "Improved efficiency and reduced inference time of the fissure segmentation module. This module identifies and categorizes lobe fissures as complete or gapped. Implemented enhancements for faster and more precise analysis, critical for evaluating collateral ventilation in patients. Additionally, introduced evidential deep learning to estimate confidence and uncertainty in model predictions.",
       logo: ThironaIcon,
       link: {
