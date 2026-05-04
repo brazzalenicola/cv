@@ -11,7 +11,7 @@ export const RESUME_DATA = {
   initials: "NB",
   location: "Arnhem, the Netherlands",
   locationLink: "https://www.google.com/maps/place/Arnhem",
-  role: "Senior Deep Learning Engineer",
+  role: "Deep Learning Engineer",
   about: "I multiply large matrices on GPUs for a living",
   summary:
     "Ambitious Deep Learning Engineer with a track record of delivering end-to-end ML solutions from research to production. I thrive in mission-oriented, interdisciplinary teams and believe that any challenge can be overcome through dedication and a strong work ethic. I bring hands-on experience in model development, scalable pipeline engineering, and deploying systems in production and regulated environments. I value direct communication and collaboration as core strengths.",
