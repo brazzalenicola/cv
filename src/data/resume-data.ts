@@ -54,6 +54,7 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "Thirona",
       link: "https://thirona.eu",
+      logo: "/logos/thirona.svg",
       title: "Senior Deep Learning Engineer",
       start: "2026",
       end: "Present",
@@ -70,6 +71,7 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "Thirona",
       link: "https://thirona.eu",
+      logo: "/logos/thirona.svg",
       title: "Deep Learning Engineer",
       start: "2023",
       end: "2026",

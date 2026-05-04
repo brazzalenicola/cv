@@ -29,6 +29,7 @@ export interface ResumeData {
   work: Array<{
     company: string;
     link: string;
+    logo?: string;
     title: string;
     start: string;
     end: string | null;

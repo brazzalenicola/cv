@@ -88,7 +88,7 @@ interface WorkExperienceItemProps {
  * Handles responsive layout for badges (mobile/desktop)
  */
 function WorkExperienceItem({ work }: WorkExperienceItemProps) {
-  const { company, link, badges, title, start, end, description, highlights } =
+  const { company, link, logo, badges, title, start, end, description, highlights } =
     work;
 
   return (
@@ -96,6 +96,14 @@ function WorkExperienceItem({ work }: WorkExperienceItemProps) {
       <CardHeader className="print:space-y-1">
         <div className="flex items-center justify-between gap-x-2 text-base">
           <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none print:text-sm">
+            {logo && (
+              <img
+                src={logo}
+                alt={`${company} logo`}
+                className="size-4 object-contain"
+                aria-hidden="true"
+              />
+            )}
             <CompanyLink company={company} link={link} />
             <BadgeList
               className="hidden gap-x-1 sm:inline-flex"
