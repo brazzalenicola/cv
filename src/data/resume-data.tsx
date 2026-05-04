@@ -11,10 +11,10 @@ export const RESUME_DATA = {
   initials: "NB",
   location: "Arnhem, the Netherlands",
   locationLink: "https://www.google.com/maps/place/Arnhem",
-  role: "Deep Learning Engineer",
+  role: "Senior Deep Learning Engineer",
   about: "I multiply large matrices on GPUs for a living",
   summary:
-    "Ambitious person with a strong inclination towards interdisciplinary and mission-oriented companies, with a particular focus on medical AI. I believe in my objectives and that any task can be achieved through dedication and a strong work ethic. I value teamwork and being able to communicate directly and sincerely as my strengths. I have experience working in regulated environments and am proficient at handling medical images (e.g., DICOMs).",
+    "Ambitious Deep Learning Engineer with a track record of delivering end-to-end ML solutions from research to production. I thrive in mission-oriented, interdisciplinary teams and believe that any challenge can be overcome through dedication and a strong work ethic. I bring hands-on experience in model development, scalable pipeline engineering, and deploying systems in production and regulated environments. I value direct communication and collaboration as core strengths.",
   avatarUrl: "https://github.com/brazzalenicola.png",
   personalWebsiteUrl: "",
   contact: {
@@ -58,14 +58,18 @@ export const RESUME_DATA = {
     {
       company: "Thirona",
       link: "https://thirona.eu",
-      title: "Deep Learning Engineer",
+      title: "Senior Deep Learning Engineer",
       logo: ThironaIcon,
       start: "2023",
       end: "Present",
-    general_description: "As a Deep Learning Engineer, I focused on the research and development of advanced segmentation modules for chest CT scans, contributing to both model innovation and clinical applicability. My work centered around these key projects:",
+    general_description: "Joined as Deep Learning Engineer in 2023 and promoted to Senior Deep Learning Engineer in January 2024. I lead research and development of deep learning models for 3D volumetric image analysis, owning work across the full ML lifecycle in a production environment.",
     description: [
-      "AVX - Artery Vein Phenotyping: Contributed to the research and development of AVX for pulmonary hypertension studies. Designed and implemented end-to-end data and training pipelines, conducted experiments to validate architectural choices, and refined vessel-based biomarkers to improve quantitative precision and clinical relevance.",
-      "Fissure Segmentation: Optimized the fissure segmentation module for faster and more accurate inference. The model detects and classifies pulmonary fissures as complete or gapped, supporting the assessment of collateral ventilation. Implemented architectural and preprocessing enhancements to reduce latency and improve robustness in clinical deployment."
+      "Research, design, and develop deep learning architectures (CNNs, UNets) for segmentation and classification tasks on 3D volumetric data.",
+      "Build and maintain scalable end-to-end ML pipelines covering data ingestion, preprocessing, training, inference, and evaluation.",
+      "Drive systematic experimentation and ablation studies to validate architectural choices and model improvements.",
+      "Optimise models for production deployment, reducing inference latency and improving robustness and reliability at scale.",
+      "Define and refine quantitative metrics and output biomarkers to ensure precise and actionable results for clients.",
+      "Collaborate cross-functionally with software engineers, and domain experts in a regulated, quality-controlled environment."
     ]
     },
     {
@@ -106,9 +110,9 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Fissure Segmentation and Classification",
-      techStack: ["UNets","CNNs", "Tensorflow", "Docker", "EDL - Evidential Deep Learning"],
-      description: "Improved efficiency and reduced inference time of the fissure segmentation module. This module identifies and categorizes lobe fissures as complete or gapped. Implemented enhancements for faster and more precise analysis, critical for evaluating collateral ventilation in patients. Additionally, introduced evidential deep learning to estimate confidence and uncertainty in model predictions.",
+      title: "Lobe and Fissure Segmentation",
+      techStack: ["UNets", "CNNs", "Tensorflow", "Docker", "Evidential Deep Learning"],
+      description: "Redesigned and extended the fissure segmentation module into a joint lobe and fissure segmentation system. Achieved significant improvements in both inference speed and segmentation accuracy through architectural and preprocessing enhancements. Introduced evidential deep learning to produce calibrated uncertainty estimates alongside predictions; these confidence signals are used in production to flag low-quality outputs and inform downstream decision-making, ensuring results consistently meet quality requirements before delivery.",
       logo: ThironaIcon,
       link: {
         label: "thirona",
@@ -125,7 +129,7 @@ export const RESUME_DATA = {
         "Lightning AI",
         "Weights&Biases"
       ],
-      description: "I improved the downstream classification performance by performing self-supervised pre-training using BarlowTwins on unlabeled X-Rays datasets. GPT was then utilized to generate reports based on the visual features of X-rays.",
+      description: "Improved downstream classification performance via self-supervised pre-training with BarlowTwins on large unlabeled X-Ray datasets. A GPT-based model was then fine-tuned with extracted visual features to generate radiology-style reports from X-rays.",
       logo: ConsultlyLogo,
       link: {
         label: "github.com",
@@ -133,34 +137,13 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Abnormal ECG classification",
-      techStack: ["Side Project", "Pytorch", "GANs", "RNNs"],
-      description:
-        "A project involving Recurrent and Generative Adversarial Networks for classifying abnormal heart rhythms and generating synthetic data.",
+      title: "Older university projects",
+      techStack: ["PyTorch", "Tensorflow", "GANs", "RNNs", "CNNs", "Matlab"],
+      description: "A collection of academic and side projects covering signal and image classification tasks — including ECG arrhythmia detection, lymphoma subtype classification, and EEG seizure classification. See GitHub for details.",
       logo: MonitoLogo,
       link: {
         label: "github.com",
-        href: "https://github.com/brazzalenicola/Atrial-Fibrillation",
-      },
-    },
-    {
-      title: "Lymphoma Subtype Classification",
-      techStack: ["Side Project", "CNNs", "RNNs", "Tensorflow"],
-      description: "Personal project on the classification of non-Hodgkin's lymphoma subtypes using different colour spaces, CNNs, RNNs and hybrid Recurrent-Convolutional neural networks",
-      logo: MonitoLogo,
-      link: {
-        label: "github.com",
-        href: "https://github.com/brazzalenicola/LymphomaSubtypeClassifier",
-      },
-    },
-    {
-      title: "Long-term Epileptic EEG classification",
-      techStack: ["Bachelor Thesis", "Matlab", "Wavelet-transform", "CNNs"],
-      description: "Classification of epileptic EEG records using a 2D mapping of the signal and CNNs",
-      logo: MonitoLogo,
-      link: {
-        label: "github.com",
-        href: "https://github.com/brazzalenicola/Atrial-Fibrillation",
+        href: "https://github.com/brazzalenicola",
       },
     },
 
