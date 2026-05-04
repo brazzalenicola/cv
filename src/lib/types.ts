@@ -1,9 +1,3 @@
-import type { StaticImageData } from "next/image";
-
-export type ResumeIcon =
-  | React.ComponentType<React.SVGProps<SVGSVGElement>>
-  | StaticImageData;
-
 export type IconType = "github" | "linkedin" | "x" | "globe" | "mail" | "phone";
 
 export interface ResumeData {
@@ -11,6 +5,7 @@ export interface ResumeData {
   initials: string;
   location: string;
   locationLink: string;
+  role: string;
   about: string;
   summary: string;
   avatarUrl: string;
@@ -27,23 +22,27 @@ export interface ResumeData {
   education: Array<{
     school: string;
     degree: string;
+    description?: string;
     start: string;
     end: string;
   }>;
   work: Array<{
     company: string;
     link: string;
-    badges: string[];
     title: string;
     start: string;
     end: string | null;
-    description: string;
+    badges: readonly string[];
+    general_description?: string;
+    description: string | readonly string[];
     highlights?: readonly string[];
   }>;
   skills: string[];
+  skills_good_knowledge: string[];
+  skills_basic_knowledge: string[];
   projects: Array<{
     title: string;
-    techStack: string[];
+    techStack: readonly string[];
     description: string;
     link?: {
       label: string;

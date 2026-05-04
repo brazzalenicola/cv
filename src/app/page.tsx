@@ -1,16 +1,25 @@
 import React from "react";
+import type { Metadata } from "next";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Section } from "@/components/ui/section";
 import { CommandMenu } from "@/components/command-menu";
+import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 import { RESUME_DATA } from "@/data/resume-data";
 import { generateResumeStructuredData } from "@/lib/structured-data";
-import { Education } from "./components/education";
-import { Header } from "./components/header";
-import { Projects } from "./components/projects";
-import { Skills } from "./components/skills";
-import { Summary } from "./components/summary";
-import { WorkExperience } from "./components/work-experience";
+import type { IconType } from "@/lib/types";
+import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+
+const ICON_MAP: Record<IconType, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
+  github: GitHubIcon,
+  linkedin: LinkedInIcon,
+  x: XIcon,
+  globe: GlobeIcon,
+  mail: MailIcon,
+  phone: PhoneIcon,
+};
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} - Resume`,
@@ -109,25 +118,22 @@ export default function ResumePage() {
                   </a>
                 </Button>
               ) : null}
-              {RESUME_DATA.contact.social.map((social) => (
-                <Button
-                  key={social.name}
-                  className="size-8"
-                  variant="outline"
-                  size="icon"
-                  asChild
-                >
-                  <a href={social.url}>
-                    <social.icon className="size-4" />
-                  </a>
-                </Button>
-              ))}
-            </div>
-            <div
-              className="animate-fade-in"
-              style={{ animationDelay: "150ms" }}
-            >
-              <WorkExperience work={RESUME_DATA.work} />
+              {RESUME_DATA.contact.social.map((social) => {
+                const SocialIcon = ICON_MAP[social.icon];
+                return (
+                  <Button
+                    key={social.name}
+                    className="size-8"
+                    variant="outline"
+                    size="icon"
+                    asChild
+                  >
+                    <a href={social.url}>
+                      <SocialIcon className="size-4" />
+                    </a>
+                  </Button>
+                );
+              })}
             </div>
           </div>
 
@@ -236,22 +242,37 @@ export default function ResumePage() {
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
               return (
-                <ProjectCard
-                  key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  tags={project.techStack}
-                  link={"link" in project ? project.link.href : undefined}
-                />
+                <Card key={project.title} className="flex flex-col overflow-hidden border border-muted p-3">
+                  <CardHeader className="">
+                    <div className="space-y-1">
+                      <h3 className="text-base font-semibold">
+                        {project.link ? (
+                          <a href={project.link.href} target="_blank" className="inline-flex items-center gap-1 hover:underline">
+                            {project.title}{" "}
+                            <span className="size-1 rounded-full bg-green-500" />
+                          </a>
+                        ) : project.title}
+                      </h3>
+                      <p className="font-mono text-xs text-muted-foreground">{project.description}</p>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="mt-auto flex">
+                    <div className="mt-2 flex flex-wrap gap-1">
+                      {project.techStack.map((tag) => (
+                        <Badge className="px-1 py-0 text-[10px]" variant="secondary" key={tag}>{tag}</Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
               );
             })}
           </div>
-        </section>
+        </Section>
 
         <nav className="print:hidden" aria-label="Quick navigation">
           <CommandMenu links={getCommandMenuLinks()} />
         </nav>
-      </main>
-    </>
+      </section>
+    </main>
   );
 }
