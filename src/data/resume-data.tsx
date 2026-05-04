@@ -62,7 +62,7 @@ export const RESUME_DATA = {
       logo: ThironaIcon,
       start: "2023",
       end: "Present",
-    general_description: "Joined as Deep Learning Engineer in 2023 and promoted to Senior Deep Learning Engineer in January 2024. I lead research and development of deep learning models for 3D volumetric image analysis, owning work across the full ML lifecycle in a production environment.",
+    general_description: "Joined as Deep Learning Engineer in 2023 and promoted to Senior Deep Learning Engineer in January 2026. I lead research and development of deep learning models for 3D volumetric image analysis, owning work across the full ML lifecycle in a production environment.",
     description: [
       "Research, design, and develop deep learning architectures (CNNs, UNets) for segmentation and classification tasks on 3D volumetric data.",
       "Build and maintain scalable end-to-end ML pipelines covering data ingestion, preprocessing, training, inference, and evaluation.",
@@ -81,7 +81,7 @@ export const RESUME_DATA = {
       end: "2022",
       general_description:"",
       description:[
-        "Conducted research on the comparison of ViTs and traditional CNNs for Chest X-Ray classification. Pretrained [miniGPT](https://github.com/karpathy/minGPT) on a large corpus of radiology reports and fine-tuned it with visual features extracted from X-Rays to build a lightweight vision-language model.",
+        "Conducted research on the comparison of ViTs and traditional CNNs for Chest X-Ray classification. Pre-trained a miniGPT model on a large corpus of radiology reports and fine-tuned it with visual features extracted from X-Rays to build a lightweight vision-language model.",
         "Evaluated multiple datasets and data augmentation strategies to analyze their effect on model efficiency and diagnostic performance."
       ]
     },
@@ -110,9 +110,9 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Lobe and Fissure Segmentation",
+      title: "Lobes and Fissures Segmentation",
       techStack: ["UNets", "CNNs", "Tensorflow", "Docker", "Evidential Deep Learning"],
-      description: "Redesigned and extended the fissure segmentation module into a joint lobe and fissure segmentation system. Achieved significant improvements in both inference speed and segmentation accuracy through architectural and preprocessing enhancements. Introduced evidential deep learning to produce calibrated uncertainty estimates alongside predictions; these confidence signals are used in production to flag low-quality outputs and inform downstream decision-making, ensuring results consistently meet quality requirements before delivery.",
+      description: "Involved in the research and development of two segmentation models: one for pulmonary lobes and one for fissures. Achieved significant improvements in both inference speed and segmentation accuracy through architectural and preprocessing enhancements. Introduced evidential deep learning to produce calibrated uncertainty estimates alongside predictions; these confidence signals are used in production to flag low-quality outputs and inform downstream decision-making, ensuring results consistently meet quality requirements before delivery.",
       logo: ThironaIcon,
       link: {
         label: "thirona",
