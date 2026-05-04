@@ -5,7 +5,7 @@ export const RESUME_DATA: ResumeData = {
   initials: "NB",
   location: "Arnhem, the Netherlands",
   locationLink: "https://www.google.com/maps/place/Arnhem",
-  role: "Senior Deep Learning Engineer",
+  role: "Deep Learning Research Engineer",
   about: "I multiply large matrices on GPUs for a living",
   summary:
     "Ambitious Deep Learning Engineer with a track record of delivering end-to-end ML solutions from research to production. I thrive in mission-oriented, interdisciplinary teams and believe that any challenge can be overcome through dedication and a strong work ethic. I bring hands-on experience in model development, scalable pipeline engineering, and deploying systems in production and regulated environments. I value direct communication and collaboration as core strengths.",
@@ -62,11 +62,12 @@ export const RESUME_DATA: ResumeData = {
         "Joined as Deep Learning Engineer in 2023 and promoted to Senior Deep Learning Engineer in January 2024. I lead research and development of deep learning models for 3D volumetric image analysis, owning work across the full ML lifecycle in a production environment.",
       description: [
         "Research, design, and develop deep learning architectures (CNNs, UNets) for segmentation and classification tasks on 3D volumetric data.",
-        "Build and maintain scalable end-to-end ML pipelines covering data ingestion, preprocessing, training, inference, and evaluation.",
+        "Own the end-to-end ML lifecycle for allocated projects — from data collection and annotation to model training, evaluation, and initial integration into production systems.",
         "Drive systematic experimentation and ablation studies to validate architectural choices and model improvements.",
         "Optimise models for production deployment, reducing inference latency and improving robustness and reliability at scale.",
-        "Define and refine quantitative metrics and output biomarkers to ensure precise and actionable results for clients.",
-        "Collaborate cross-functionally with software engineers and domain experts in a regulated, quality-controlled environment.",
+        "Serve as technical point of contact for deep learning within the team, advising on design decisions and evaluating emerging technologies for adoption.",
+        "Define the scope and planning of algorithm releases, coordinating delivery across engineering teams from stakeholder requirements to shipped features.",
+        "Support and mentor Deep Learning Engineers in the design and development of new algorithm features; reflect on research project status and surface technical risks early.",
       ],
     },
     {
