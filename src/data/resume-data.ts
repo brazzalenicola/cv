@@ -8,7 +8,7 @@ export const RESUME_DATA: ResumeData = {
   role: "Deep Learning Research Engineer",
   about: "I multiply large matrices on GPUs for a living",
   summary:
-    "Ambitious Deep Learning Engineer with a track record of delivering end-to-end ML solutions from research to production. I thrive in mission-oriented, interdisciplinary teams and believe that any challenge can be overcome through dedication and a strong work ethic. I bring hands-on experience in model development, scalable pipeline engineering, and deploying systems in production and regulated environments. I value direct communication and collaboration as core strengths.",
+    "Ambitious Deep Learning Engineer with a track record of delivering end-to-end ML solutions from research to production. I enjoy working in mission-oriented, interdisciplinary teams and approach difficult problems with curiosity, persistence, and a strong work ethic. My work combines model development, experimentation, pipeline engineering, and production deployment, mostly in medical AI and regulated environments. I value direct communication, collaboration, and the kind of rigorous thinking that turns promising ideas into reliable systems.",
   avatarUrl: "https://github.com/brazzalenicola.png",
   personalWebsiteUrl: "",
   contact: {
@@ -59,7 +59,7 @@ export const RESUME_DATA: ResumeData = {
       start: "2026",
       end: "Present",
       badges: [],
-      general_description: "",
+      general_description: "I currently work in a more senior role, combining hands-on deep learning work with technical guidance, planning, and mentoring. A large part of the role is helping the team make good technical decisions: choosing what to try, designing experiments, understanding risks, and turning research work into reliable releases.",
       description: [
         "Serve as technical point of contact for deep learning within the team, advising on design decisions and evaluating emerging technologies for adoption.",
         "Define the scope, content, and planning of algorithm releases, coordinating delivery from stakeholder requirements through to shipped features.",
@@ -76,7 +76,7 @@ export const RESUME_DATA: ResumeData = {
       start: "2023",
       end: "2026",
       badges: [],
-      general_description: "",
+      general_description: "In this role I worked across the full lifecycle of deep learning projects: understanding the problem, shaping the data and experiments, developing models, evaluating them carefully, and helping bring them into production. The work was mainly focused on 3D medical imaging, where model quality, robustness, and reliability are essential.",
       description: [
         "Designed and developed deep learning models (CNNs, UNets) for segmentation and classification tasks on 3D volumetric data.",
         "Owned the end-to-end ML lifecycle for allocated projects — from data collection and annotation to model training, evaluation, and initial integration into production systems.",
