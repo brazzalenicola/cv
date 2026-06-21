@@ -51,39 +51,73 @@ export const RESUME_DATA: ResumeData = {
     },
   ],
   work: [
-    {
-      company: "Thirona",
-      link: "https://thirona.eu",
-      logo: "/logos/thirona.svg",
-      title: "Senior Deep Learning Engineer",
-      start: "2026",
-      end: "Present",
-      badges: [],
-      general_description: "I currently work in a more senior role, combining hands-on deep learning work with technical guidance, planning, and mentoring. A large part of the role is helping the team make good technical decisions: choosing what to try, designing experiments, understanding risks, and turning research work into reliable releases.",
-      description: [
-        "Serve as technical point of contact for deep learning within the team, advising on design decisions and evaluating emerging technologies for adoption.",
-        "Define the scope, content, and planning of algorithm releases, coordinating delivery from stakeholder requirements through to shipped features.",
-        "Support and mentor Deep Learning Engineers in designing and developing new algorithm features.",
-        "Reflect on the status of research projects in terms of technical performance and surface risks early.",
-        "Drive systematic experimentation and ablation studies to validate architectural choices and model improvements.",
-      ],
-    },
-    {
-      company: "Thirona",
-      link: "https://thirona.eu",
-      logo: "/logos/thirona.svg",
-      title: "Deep Learning Engineer",
-      start: "2023",
-      end: "2026",
-      badges: [],
-      general_description: "In this role I worked across the full lifecycle of deep learning projects: understanding the problem, shaping the data and experiments, developing models, evaluating them carefully, and helping bring them into production. The work was mainly focused on 3D medical imaging, where model quality, robustness, and reliability are essential.",
-      description: [
-        "Designed and developed deep learning models (CNNs, UNets) for segmentation and classification tasks on 3D volumetric data.",
-        "Owned the end-to-end ML lifecycle for allocated projects — from data collection and annotation to model training, evaluation, and initial integration into production systems.",
-        "Built and maintained scalable pipelines covering preprocessing, training, inference, and evaluation.",
-        "Optimised models for production deployment, reducing inference latency and improving robustness at scale.",
-      ],
-    },
+      {
+
+    company: "Thirona",
+
+    link: "https://thirona.eu",
+
+    logo: "/logos/thirona.svg",
+
+    title: "Senior Deep Learning Engineer",
+
+    start: "2026",
+
+    end: "Present",
+
+    badges: [],
+
+    general_description:
+
+      "In my current role, I combine hands-on deep learning work with technical guidance, planning, and mentoring. I help the team make sound technical decisions, evaluate promising ideas, and turn research work into reliable algorithm releases.",
+
+    description: [
+
+      "Act as technical point of contact for deep learning, supporting model design decisions, reviewing technical work, and helping junior engineers grow into effective contributors.",
+
+      "Lead small PoCs and experiments to assess new tools and methods, with a focus on whether they are useful, maintainable, and worth adopting in practice.",
+
+      "Coordinate algorithm releases by translating stakeholder needs into technical scope, planning the work, and surfacing risks early through experiments and validation.",
+
+      "Help bridge research and production by improving how models are evaluated, documented, exported, and integrated into production systems.",
+
+    ],
+
+  },
+
+  {
+
+    company: "Thirona",
+
+    link: "https://thirona.eu",
+
+    logo: "/logos/thirona.svg",
+
+    title: "Deep Learning Engineer",
+
+    start: "2023",
+
+    end: "2026",
+
+    badges: [],
+
+    general_description:
+
+      "In this role, I worked across the full lifecycle of deep learning projects in medical imaging: understanding the problem, shaping the data and experiments, developing models, evaluating them carefully, and helping bring them into production.",
+
+    description: [
+
+      "Developed deep learning models for 3D medical image segmentation and classification, balancing model performance with robustness and production constraints.",
+
+      "Owned project workflows from data preparation and experimentation to training, evaluation, inference, and integration with production systems.",
+
+      "Built and maintained reusable ML pipelines that supported model development, evaluation, and deployment across multiple projects.",
+
+      "Improved model reliability through careful validation, failure analysis, uncertainty estimation, and iterative refinement of models and pipelines.",
+
+    ],
+
+  },
     {
       company: "Aalto University – ML4H Research Group",
       link: "https://users.ics.aalto.fi/~pemartti/",
@@ -106,7 +140,7 @@ export const RESUME_DATA: ResumeData = {
       title: "Artery-Vein Phenotyping – AVX",
       techStack: ["UNets", "CNNs", "TensorFlow", "Docker"],
       description:
-        "Contributed to the artery-vein segmentation module by researching practical improvements. Designed and implemented parts of the pipeline — including training, inference and evaluation — and explored different normalisation techniques, new metrics, and loss functions to accurately segment anatomical structures. Refined biomarker calculations to provide clients with precise and informative vascular measurements.",
+        "A medical imaging project focused on artery-vein segmentation and biomarker extraction. I contributed to training, inference, evaluation, and practical model improvements, including normalization strategies, metrics, and loss functions for more robust anatomical segmentation.",
       link: {
         label: "thirona.eu",
         href: "https://thirona.eu/avx/",
@@ -116,7 +150,7 @@ export const RESUME_DATA: ResumeData = {
       title: "Lobes and Fissures Segmentation",
       techStack: ["UNets", "CNNs", "TensorFlow", "Docker", "Evidential Deep Learning"],
       description:
-        "Involved in the research and development of two segmentation models: one for pulmonary lobes and one for fissures. Achieved significant improvements in both inference speed and segmentation accuracy through architectural and preprocessing enhancements. Introduced evidential deep learning to produce calibrated uncertainty estimates; these confidence signals are used in production to flag low-quality outputs and inform downstream decision-making.",
+        "A production-oriented medical imaging project focused on segmenting pulmonary lobes and fissures in CT scans. The work involved model development, preprocessing, evaluation, and improving the reliability of the system. I also introduced evidential deep learning to estimate uncertainty and help identify low-confidence outputs.",
       link: {
         label: "thirona.eu",
         href: "https://thirona.eu/",
@@ -124,9 +158,9 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Multi-modal Chest X-Ray Analysis",
-      techStack: ["Master Thesis", "PyTorch", "Lightning AI", "Weights & Biases", "HPC"],
+      techStack: ["PyTorch", "Lightning", "Weights & Biases"],
       description:
-        "Improved downstream classification performance via self-supervised pre-training with BarlowTwins on large unlabeled X-Ray datasets. A GPT-based model was then fine-tuned with extracted visual features to generate radiology-style reports from X-rays.",
+        "A research project exploring self-supervised learning and lightweight vision-language modeling for chest X-ray analysis. I used Barlow Twins pre-training to improve downstream classification and experimented with conditioning a small GPT-style language model on visual features from X-rays. The project was especially useful for understanding the gap between a promising idea and a model that actually learns the desired cross-modal relationship.",
       link: {
         label: "github.com",
         href: "https://github.com/brazzalenicola/chestXray-ssl",
