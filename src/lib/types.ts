@@ -38,9 +38,10 @@ export interface ResumeData {
     description: string | readonly string[];
     highlights?: readonly string[];
   }>;
-  skills: string[];
-  skills_good_knowledge: string[];
-  skills_basic_knowledge: string[];
+  skillGroups: Array<{
+    title: string;
+    items: readonly string[];
+  }>;
   projects: Array<{
     title: string;
     techStack: readonly string[];
