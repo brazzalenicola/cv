@@ -36,33 +36,34 @@
   }
 
   .dark {
-    --background: 224 71.4% 4.1%;
-    --foreground: 210 20% 98%;
+    /* Catppuccin Mocha - IDE-inspired dark theme */
+    --background: 240 21% 15%;       /* #1e1e2e base */
+    --foreground: 226 64% 88%;       /* #cdd6f4 text */
 
-    --card: 224 71.4% 4.1%;
-    --card-foreground: 210 20% 98%;
+    --card: 240 18% 19%;             /* #24273a surface0 */
+    --card-foreground: 226 64% 88%;  /* #cdd6f4 */
 
-    --popover: 224 71.4% 4.1%;
-    --popover-foreground: 210 20% 98%;
+    --popover: 240 18% 19%;
+    --popover-foreground: 226 64% 88%;
 
-    --primary: 210 20% 98%;
-    --primary-foreground: 220.9 39.3% 11%;
+    --primary: 217 92% 76%;          /* #89b4fa blue */
+    --primary-foreground: 240 21% 15%;
 
-    --secondary: 215 27.9% 16.9%;
-    --secondary-foreground: 210 20% 98%;
+    --secondary: 237 16% 23%;        /* #313244 surface1 */
+    --secondary-foreground: 226 64% 88%;
 
-    --muted: 215 27.9% 16.9%;
-    --muted-foreground: 217.9 10.6% 64.9%;
+    --muted: 237 16% 23%;
+    --muted-foreground: 243 12% 54%; /* #6c7086 overlay0 - comment gray */
 
-    --accent: 215 27.9% 16.9%;
-    --accent-foreground: 210 20% 98%;
+    --accent: 237 16% 23%;
+    --accent-foreground: 226 64% 88%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 20% 98%;
+    --destructive: 343 81% 75%;      /* #f38ba8 red */
+    --destructive-foreground: 240 21% 15%;
 
-    --border: 215 27.9% 16.9%;
-    --input: 215 27.9% 16.9%;
-    --ring: 216 12.2% 83.9%;
+    --border: 237 16% 23%;           /* #313244 */
+    --input: 237 16% 23%;
+    --ring: 217 92% 76%;
   }
 }
 

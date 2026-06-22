@@ -11,6 +11,7 @@ import { RESUME_DATA } from "@/data/resume-data";
 import { generateResumeStructuredData } from "@/lib/structured-data";
 import type { IconType } from "@/lib/types";
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const ICON_MAP: Record<IconType, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
   github: GitHubIcon,
@@ -73,11 +74,14 @@ export default function ResumePage() {
 
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
-      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
+      <div className="fixed top-4 right-4 print:hidden">
+        <ThemeToggle />
+      </div>
+      <section className="mx-auto w-full max-w-2xl space-y-8 bg-background print:space-y-6">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
-            <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
-            <p className="max-w-md text-pretty font-mono text-muted-foreground">
+            <h1 className="text-2xl font-bold dark:text-[#cba6f7]">{RESUME_DATA.name}</h1>
+            <p className="max-w-md text-pretty font-mono text-muted-foreground dark:text-[#89b4fa]">
               {RESUME_DATA.role}
             </p>
             <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground">
@@ -143,29 +147,29 @@ export default function ResumePage() {
           </Avatar>
         </div>
         <Section>
-          <h2 className="text-xl font-bold">About</h2>
+          <h2 className="text-xl font-bold dark:text-[#cba6f7]">About</h2>
           <p className="text-pretty font-mono text-sm text-muted-foreground">
             {RESUME_DATA.summary}
           </p>
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Work Experience</h2>
+          <h2 className="text-xl font-bold dark:text-[#cba6f7]">Work Experience</h2>
           {RESUME_DATA.work.map((work) => {
             return (
               <Card key={work.company}>
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                      <a className="hover:underline" href={work.link}>
+                      <a className="hover:underline dark:text-[#a6e3a1]" href={work.link}>
                         {work.company}
                       </a>
                     </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
+                    <div className="text-sm tabular-nums text-gray-500 dark:text-[#fab387]">
                       {work.start} - {work.end}
                     </div>
                   </div>
 
-                  <h4 className="font-mono text-sm leading-none">
+                  <h4 className="font-mono text-sm leading-none dark:text-[#89b4fa]">
                     {work.title}
                   </h4>
                 </CardHeader>
@@ -194,21 +198,21 @@ export default function ResumePage() {
           })}
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Education</h2>
+          <h2 className="text-xl font-bold dark:text-[#cba6f7]">Education</h2>
           {RESUME_DATA.education.map((education) => {
             return (
               <Card key={education.school}>
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="font-semibold leading-none">
+                    <h3 className="font-semibold leading-none dark:text-[#89dceb]">
                       {education.school}
                     </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
+                    <div className="text-sm tabular-nums text-gray-500 dark:text-[#fab387]">
                       {education.start} - {education.end}
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent className="mt-2">{education.degree}</CardContent>
+                <CardContent className="mt-2 dark:text-[#a6e3a1]">{education.degree}</CardContent>
                 <CardContent className="mt-2 text-xs">
                         {education.description}
                   </CardContent>
@@ -217,10 +221,10 @@ export default function ResumePage() {
           })}
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Technical Skills</h2>
+          <h2 className="text-xl font-bold dark:text-[#cba6f7]">Technical Skills</h2>
           {RESUME_DATA.skillGroups.map((group) => (
             <div key={group.title}>
-              <h6 className="inline-flex gap-x-1 font-semibold leading-none mb-1">{group.title}</h6>
+              <h6 className="inline-flex gap-x-1 font-semibold leading-none mb-1 dark:text-[#f9e2af]">{group.title}</h6>
               <div className="flex flex-wrap gap-1 mb-3">
                 {group.items.map((skill) => (
                   <Badge key={skill}>{skill}</Badge>
@@ -230,16 +234,16 @@ export default function ResumePage() {
           ))}
         </Section>
         <Section className="print-force-new-page scroll-mb-16">
-          <h2 className="text-xl font-bold">Projects</h2>
+          <h2 className="text-xl font-bold dark:text-[#cba6f7]">Projects</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
               return (
                 <Card key={project.title} className="flex flex-col overflow-hidden border border-muted p-3">
                   <CardHeader className="">
                     <div className="space-y-1">
-                      <h3 className="text-base font-semibold">
+                      <h3 className="text-base font-semibold dark:text-[#89b4fa]">
                         {project.link ? (
-                          <a href={project.link.href} target="_blank" className="inline-flex items-center gap-1 hover:underline">
+                          <a href={project.link.href} target="_blank" className="inline-flex items-center gap-1 hover:underline dark:text-[#89b4fa]">  
                             {project.title}{" "}
                             <span className="size-1 rounded-full bg-green-500" />
                           </a>

@@ -133,68 +133,51 @@ export const RESUME_DATA: ResumeData = {
     },
   ],
   skillGroups: [
-    {
-      title: "Core",
-      items: [
-        "Deep Learning",
-        "Computer Vision",
-        "Model Development",
-        "Model Evaluation",
-        "Research Prototyping",
-        "Applied ML",
-      ],
-    },
-    {
-      title: "Frameworks & Libraries",
-      items: [
-        "PyTorch",
-        "TensorFlow",
-        "Keras",
-        "OpenCV",
-        "ITK",
-        "scikit-learn",
-      ],
-    },
-    {
-      title: "Programming & Data",
-      items: [
-        "Python",
-        "SQL",
-        "NumPy",
-        "Pandas",
-      ],
-    },
-    {
-      title: "ML Engineering",
-      items: [
-        "Git",
-        "Docker",
-        "Jenkins",
-        "Data Pipelines",
-        "Model Deployment",
-        "Experimentation",
-      ],
-    },
-    {
-      title: "Domain Experience",
-      items: [
-        "Medical Imaging",
-        "Image Processing",
-        "Segmentation",
-        "Classification",
-      ],
-    },
-    {
-      title: "Additional Languages",
-      items: [
-        "C++",
-        "Java",
-        "Julia",
-        "R",
-        "MATLAB",
-      ],
-    },
-  ],
+  {
+    title: "Core",
+    items: [
+      "Deep Learning",
+      "Computer Vision",
+      "Model Development",
+      "Model Evaluation",
+      "Research Prototyping",
+    ],
+  },
+  {
+    title: "Stack",
+    items: [
+      "Python",
+      "PyTorch",
+      "TensorFlow",
+      "Keras",
+      "OpenCV",
+      "ITK",
+      "NumPy",
+      "Pandas",
+      "scikit-learn",
+    ],
+  },
+  {
+    title: "Engineering",
+    items: [
+      "Git",
+      "Docker",
+      "Jenkins",
+      "SQL",
+      "Model Deployment",
+      "Data Pipelines",
+    ],
+  },
+  {
+    title: "Applied Experience",
+    items: [
+      "Medical Imaging",
+      "Image Processing",
+      "Segmentation",
+      "Classification",
+    ],
+  },
+],
   projects: [
     {
       title: "Artery-Vein Phenotyping – AVX",
