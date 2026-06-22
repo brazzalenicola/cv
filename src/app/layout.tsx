@@ -9,8 +9,11 @@ import { ErrorBoundary } from "@/components/error-boundary";
 import { ThemeProvider } from "@/components/theme-provider";
 import { RESUME_DATA } from "@/data/resume-data";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://nicolabrazzale.me";
+const twitterHandle = RESUME_DATA.contact.social.find((s) => s.name === "X")?.url.split("/").pop();
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cv.jarocki.me"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: `${RESUME_DATA.name} - ${RESUME_DATA.about}`,
     template: `%s | ${RESUME_DATA.name}`,
@@ -21,11 +24,10 @@ export const metadata: Metadata = {
     "cv",
     "portfolio",
     RESUME_DATA.name,
-    "software engineer",
-    "full stack developer",
-    "react",
-    "next.js",
-    "typescript",
+    RESUME_DATA.role,
+    "deep learning",
+    "machine learning",
+    "medical imaging",
   ],
   authors: [{ name: RESUME_DATA.name }],
   creator: RESUME_DATA.name,
@@ -38,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: RESUME_DATA.personalWebsiteUrl,
+    url: SITE_URL,
     siteName: `${RESUME_DATA.name}'s CV`,
     title: `${RESUME_DATA.name} - ${RESUME_DATA.about}`,
     description: RESUME_DATA.about,
@@ -58,10 +60,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${RESUME_DATA.name} - ${RESUME_DATA.about}`,
     description: RESUME_DATA.about,
-    creator: "@BartoszJarocki",
+    ...(twitterHandle ? { creator: `@${twitterHandle}` } : {}),
   },
   alternates: {
-    canonical: RESUME_DATA.personalWebsiteUrl,
+    canonical: SITE_URL,
   },
 };
 
