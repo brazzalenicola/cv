@@ -83,7 +83,7 @@ export const RESUME_DATA: ResumeData = {
         "In this role, I worked across the full lifecycle of deep learning projects in medical imaging: understanding the problem, shaping the data and experiments, developing models, evaluating them carefully, and helping bring them into production.",
       description: [
         "Built deep learning projects from scratch, from data gathering, curation, and preprocessing to training, evaluation, inference, and integration with production systems, for 3D medical image segmentation and classification.",
-        "Applied evidential deep learning across two FDA-cleared production models to derive a joint confidence signal, and built a routing system on top that sends only low-confidence cases to manual review, automating roughly 80% of a previously manual workload.",
+        "Added uncertainty estimation to two FDA-cleared production models, and built a routing system on top that sends only low-confidence cases to manual review, automating roughly 80% of a previously manual workload.",
         "Converted PyTorch models to ONNX for production inference, resolving operator-compliance and mixed-precision issues, benchmarking speed/accuracy trade-offs, and verifying numerical consistency between research and deployed models.",
         "Built and maintained reusable ML pipelines that supported model development, evaluation, and deployment across multiple projects.",
         "Ran controlled experiments across preprocessing, normalization, loss functions, model variants, and uncertainty methods to improve model robustness and reliability.",
@@ -178,10 +178,10 @@ export const RESUME_DATA: ResumeData = {
         "CNNs",
         "TensorFlow",
         "Docker",
-        "Evidential Deep Learning",
+        "Uncertainty Estimation",
       ],
       description:
-        "A production-oriented medical imaging project focused on segmenting pulmonary lobes and fissures in CT scans, built from scratch. The work involved data preparation, model development, preprocessing, evaluation, and improving the reliability of the system. I also introduced evidential deep learning to estimate uncertainty and identify low-confidence outputs.",
+        "A production-oriented medical imaging project focused on segmenting pulmonary lobes and fissures in CT scans, built from scratch. The work involved data preparation, model development, preprocessing, evaluation, and improving the reliability of the system. I also added uncertainty estimation to identify low-confidence outputs.",
       link: {
         label: "thirona.eu",
         href: "https://thirona.eu/",
